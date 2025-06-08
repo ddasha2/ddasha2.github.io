@@ -1,7 +1,113 @@
-nav {
-    color: rgb(100, 207, 51);
+body {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+
+  background-color: #69aece;
 }
 
+a{
+    color: #596cc0;
+    font-size: 25px;
+}
 li {
   list-style: none;
 }
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 10px
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Тут задаем пропорции флекс-элементам 1 к 2 */
+.aside_element {
+  flex-grow: 1;
+
+  /* стили для боковых статей */
+  background-color: #e7d1d4;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.blocks_element {
+  flex-grow: 2;
+
+  /* стили для блоков */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.block {
+  background-color: #e5e5e5;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.aside_article {
+  padding: 5px;
+}
+
+/* пример с псеводклассом и анимацией*/
+.aside_article:hover {
+  background-color: #bb8cbb;
+  border-radius: 5px;
+
+  /* делаем плавное изменение цвета при наведении */
+  transition: background-color 1s;
+}
+
+header {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  background-color: #dcc5e6;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+footer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  background-color: #dcc5e6;
+  border-radius: 10px;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  border-radius: 10px;
+}
+
+/* ------------------------------------ */
+/* стили для страницы с блогом */
+
+.articles {
+  display: flex;
+  gap: 5px;
+
+  /* перенос элементов */
+  flex-wrap: wrap;
+}
+
+.article {
+  background-color: #e7d1d4;
+  border-radius: 10px;
+  padding: 10px;
+  width: 350px;
+}
+
